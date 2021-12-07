@@ -1,0 +1,30 @@
+### Cadastrar um novo funcionario
+POST https://localhost:5001/api/funcionario/create
+Content-Type: application/json
+
+{
+    "Nome" : "Matheus",
+    "Salario" : 4645,
+    "Idade": 38,
+    "CPF" : "0123456789",
+    "CategoriaId" : 1
+}
+
+### Listar todos os funcionarios
+GET https://localhost:5001/api/funcionario/list
+
+### Buscar um funcionario pelo id
+GET https://localhost:5001/api/funcionario/getbyid/1
+
+### Deletar um funcionario pelo nome
+DELETE https://localhost:5001/api/funcionario/delete/David
+
+### Alterar um funcionario
+PUT https://localhost:5001/api/funcionario/update
+Content-Type: application/json
+
+{
+    "Id" : 2,
+    "Nome" : "Matheus",
+    "Salario" : 5000
+}
