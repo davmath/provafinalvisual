@@ -21,6 +21,7 @@ import { TemplateComponent } from "./components/template/template.component";
 import { IndexComponent } from "./components/views/home/index/index.component";
 import { CadastrarFuncionarioComponent } from "./components/views/produto/cadastrar-produto/cadastrar-produto.component";
 import { ListarProdutoComponent } from "./components/views/produto/listar-produto/listar-produto.component";
+import { CadastrarFolhaComponent } from './components/views/folha-pagameto/cadastrar-folha/cadastrar-folha.component';
 
 
 
@@ -31,6 +32,7 @@ import { ListarProdutoComponent } from "./components/views/produto/listar-produt
         CadastrarFuncionarioComponent,
         TemplateComponent,
         IndexComponent,
+        CadastrarFolhaComponent,
         
         
        
