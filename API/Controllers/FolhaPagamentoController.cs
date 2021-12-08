@@ -50,5 +50,21 @@ namespace API.Controllers
         }
 
 
+    [HttpDelete]
+        [Route("delete/{id}")]
+        public IActionResult Delete([FromRoute] int id)
+        {
+            //Expressão lambda
+            //Buscar um objeto na tabela de funcionarios com base no nome
+            FolhaPagamento folhaPagamento = _context.FolhasPagamento.FirstOrDefault(folhaPagamento => folhaPagamento.Id == id);
+
+            if (folhaPagamento == null)
+            {
+                return NotFound();
+            }
+            _context.FolhasPagamento.Remove(folhaPagamento);
+            _context.SaveChanges();
+            return Ok(_context.FolhasPagamento.ToList());
+        }
     }
 }
