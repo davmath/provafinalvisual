@@ -13,5 +13,7 @@ namespace API.Data
         public DbSet<Funcionario> Funcionarios { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
 
+        public DbSet<FolhaPagamento> FolhasPagamento { get; set; }
+
     }
 }

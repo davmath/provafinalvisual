@@ -1,0 +1,10 @@
+POST https://localhost:5001/api/folhapagamento/create
+Content-Type: application/json
+
+{
+    "Ano" : "2021",
+    "Mes": "outubro",
+    "ValorHora" : 45,
+    "HorasTrabalhadas": 500,
+    "FuncionarioId" : 2
+}
